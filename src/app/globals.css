@@ -24,3 +24,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.gradientBg {
+  @apply bg-gradient-to-r from-orange-500 to-red-500;
+}
+.gradientText {
+  background: linear-gradient(to right, #f97316, #dc2626);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  text-color: transparent;
+}
+
+.gradientBorder {
+  background-image: linear-gradient(
+    to right,
+    #f97316,
+    #dc2626 background-origin: border-box; background-clip: border-box;
+  );
+}
